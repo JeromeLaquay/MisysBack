@@ -1,0 +1,6 @@
+projectKey=com.jerome:Coell
+serverUrl=http://localhost:9000
+serverVersion=6.7.1.35068
+dashboardUrl=http://localhost:9000/dashboard/index/com.jerome:Coell
+ceTaskId=AWDBKn5_kA9fY56KjKqj
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWDBKn5_kA9fY56KjKqj
