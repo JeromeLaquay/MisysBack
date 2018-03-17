@@ -1,5 +1,5 @@
 eclipse.preferences.version=1
 extraProperties=sonar.host.url\=http\://localhost\:9000\r\nsonar.jdbc.driver\=oracle.jdbc.driver.OracleDriver\r\nsonar.jdbc.password\=sonar\r\nsonar.jdbc.url\=jdbc\:oracle\:thin\:@localhost\:1521\:xe\r\nsonar.jdbc.username\=sonar
-projectKey=com.jerome\:Coell
+projectKey=com.jerome\:MisysBack
 serverUrl=http\://localhost\:9000
 version=2
