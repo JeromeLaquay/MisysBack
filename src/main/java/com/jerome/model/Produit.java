@@ -19,19 +19,26 @@ public class Produit {
 	private int annee_sortie;
 	private String genre;
 	private String description;
+	private double prix;
 	@ManyToOne
 	private Auteur auteur;
+	@ManyToOne
+	private Typep typep;
 	
 	public Produit() {}
 
-	public Produit(String title, String image_url, int annee_sortie, String genre, String description, Auteur auteur) {
+	public Produit(Long id, String title, String image_url, int annee_sortie, String genre, String description,
+			double prix, Auteur auteur, Typep typep) {
 		super();
+		this.id = id;
 		this.title = title;
 		this.image_url = image_url;
 		this.annee_sortie = annee_sortie;
 		this.genre = genre;
 		this.description = description;
+		this.prix = prix;
 		this.auteur = auteur;
+		this.typep = typep;
 	}
 
 	public Long getId() {
@@ -88,6 +95,22 @@ public class Produit {
 
 	public void setAuteur(Auteur auteur) {
 		this.auteur = auteur;
+	}
+
+	public double getPrix() {
+		return prix;
+	}
+
+	public void setPrix(double prix) {
+		this.prix = prix;
+	}
+
+	public Typep getTypep() {
+		return typep;
+	}
+
+	public void setTypep(Typep typep) {
+		this.typep = typep;
 	}
 	
 	
