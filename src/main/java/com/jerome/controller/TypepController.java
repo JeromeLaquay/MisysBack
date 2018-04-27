@@ -1,6 +1,7 @@
 package com.jerome.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,6 +16,7 @@ public class TypepController {
 	@Autowired
 	TypepRepository repo;
     
+	@CrossOrigin(origins = "http://localhost:3000")
 	@RequestMapping(method = RequestMethod.GET, value="/typep/{typeproduit}")
     public Typep findTypep(@PathVariable("typeproduit") Long typeproduit) {
     	Typep typep= repo.findById(typeproduit);
