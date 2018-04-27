@@ -11,8 +11,7 @@ import javax.persistence.SequenceGenerator;
 public class Produit {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PRODUIT_SEQ")
-	@SequenceGenerator(sequenceName = "produit_seq", initialValue = 1, allocationSize = 1, name = "PRODUIT_SEQ")
+    @GeneratedValue
 	private Long id;
 	private String title;
 	private String image_url;

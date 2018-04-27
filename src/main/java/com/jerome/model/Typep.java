@@ -17,8 +17,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class Typep {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "TYPEP_SEQ")
-	@SequenceGenerator(sequenceName = "typep_seq", initialValue = 1, allocationSize = 1, name = "TYPEP_SEQ")
+    @GeneratedValue
 	private Long id;
 	private String typeProduit;
 	@JsonIgnore

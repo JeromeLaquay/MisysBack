@@ -16,8 +16,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 public class Utilisateur {
   @Id
-  @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "UTILISATEUR_SEQ")
-  @SequenceGenerator(sequenceName = "utilisateur_seq", initialValue = 1, allocationSize = 1, name = "UTILISATEUR_SEQ")
+  @GeneratedValue
   private Long idutilisateur;
 
   private String nom;
